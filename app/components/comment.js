@@ -35,10 +35,10 @@ export default class Comment extends React.Component {
 
        if (this.didUserLike()) {
          // User clicked 'unlike' button.
-         unlikeCommentItem(this.state.feedItemId, this.state.index, 4, callbackFunction);
+         unlikeCommentItem(this.state.feedItemId, 4, this.state.index, callbackFunction);
        } else {
          // User clicked 'like' button.
-         likeCommentItem(this.state.feedItemId, this.state.index, 4, callbackFunction);
+         likeCommentItem(this.state.feedItemId, 4, this.state.index, callbackFunction);
        }
      }
    }
